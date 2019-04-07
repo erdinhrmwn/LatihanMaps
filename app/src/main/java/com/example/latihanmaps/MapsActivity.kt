@@ -99,23 +99,39 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         setUpMap()
 
         fab.setOnClickListener {
-            if (!isFABOpen){
+            if (!isFABOpen) {
                 showFABMenu()
-            }else{
+            } else {
                 closeFABMenu()
             }
         }
 
         fab1.setOnClickListener {
+            tv1.setTextColor(resources.getColor(R.color.black))
+            tv2.setTextColor(resources.getColor(R.color.black))
+            tv3.setTextColor(resources.getColor(R.color.black))
+            tv4.setTextColor(resources.getColor(R.color.black))
             mMap.mapType = GoogleMap.MAP_TYPE_TERRAIN
         }
         fab2.setOnClickListener {
+            tv1.setTextColor(resources.getColor(R.color.white))
+            tv2.setTextColor(resources.getColor(R.color.white))
+            tv3.setTextColor(resources.getColor(R.color.white))
+            tv4.setTextColor(resources.getColor(R.color.white))
             mMap.mapType = GoogleMap.MAP_TYPE_HYBRID
         }
         fab3.setOnClickListener {
+            tv1.setTextColor(resources.getColor(R.color.white))
+            tv2.setTextColor(resources.getColor(R.color.white))
+            tv3.setTextColor(resources.getColor(R.color.white))
+            tv4.setTextColor(resources.getColor(R.color.white))
             mMap.mapType = GoogleMap.MAP_TYPE_SATELLITE
         }
         fab4.setOnClickListener {
+            tv1.setTextColor(resources.getColor(R.color.black))
+            tv2.setTextColor(resources.getColor(R.color.black))
+            tv3.setTextColor(resources.getColor(R.color.black))
+            tv4.setTextColor(resources.getColor(R.color.black))
             mMap.mapType = GoogleMap.MAP_TYPE_NORMAL
         }
     }
