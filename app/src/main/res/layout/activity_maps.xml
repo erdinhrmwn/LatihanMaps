@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/map"
+              tools:context=".MapsActivity"
+              android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <TextView
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:id="@+id/tv4"
+            android:layout_alignBottom="@id/fab3"
+            android:layout_toEndOf="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Normal"/>
+    <TextView
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:id="@+id/tv3"
+            android:layout_alignBottom="@id/fab3"
+            android:layout_toEndOf="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Satelite"/>
+    <TextView
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:id="@+id/tv2"
+            android:layout_alignBottom="@id/fab2"
+            android:layout_toEndOf="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Hybird"/>
+    <TextView
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:id="@+id/tv1"
+            android:layout_alignBottom="@id/fab1"
+            android:layout_toEndOf="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Terrain"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+            app:fabCustomSize="50dp"
+            app:srcCompat="@android:drawable/ic_dialog_info"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+            app:fabCustomSize="50dp"
+            app:srcCompat="@android:drawable/ic_btn_speak_now"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+            app:fabCustomSize="50dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+            app:fabCustomSize="50dp"
+            app:srcCompat="@android:drawable/ic_dialog_map"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="13dp"
+            app:srcCompat="@android:drawable/ic_input_add"/>
+</RelativeLayout>
